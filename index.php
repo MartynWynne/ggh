@@ -66,7 +66,7 @@ body, div, td, th {
     </div>
     <div id="content">
     	<?php
-            echo "Hello world";
+            echo 'Current PHP version: ' . phpversion();
         ?>
     </div>
 </div>
