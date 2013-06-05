@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Grad Greenhouse</title>
+    <title>GGH Test site</title>
     <style>
     body {
 	    margin: 0px;
@@ -61,6 +61,7 @@
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-41429039-1']);
         _gaq.push(['_trackPageview']);
+        _gaq.push(['_setCustomVar', 1, 'username', 'TestUser', 1]);
 
         (function() {
             var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
@@ -81,6 +82,7 @@
     	<?php
             echo 'Current PHP version: ' . phpversion();
         ?>
+        <a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'Media play', 'Play',,, false]);">Click me!</a>
     </div>
 </div>
 <div id="footer">
