@@ -60,7 +60,7 @@
 
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-41429039-1']);
-        _gaq.push(['_setCustomVar', 1, 'username', 'Testuser', 1]);
+        _gaq.push(['_setCustomVar', 1, '<?php echo $_REQUEST ["username"]; ?>', '', 1]);
         _gaq.push(['_trackPageview']);
 
         (function() {
@@ -79,10 +79,18 @@
         <div id="nav">home | page1 | page2 | page3</div>
     </div>
     <div id="content">
-    	<?php
-            echo 'Current PHP version: ' . phpversion();
-        ?>
-        <a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'Media play', 'Play',,, false]);">Click me!</a>
+    	<?php echo 'Welcome ' . $_REQUEST ["username"]; ?>!<br />
+        <a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'video', 'started', 'vid_1', , false]);">Start</a>
+        <a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'video', 'progress', 'vid_1', 1, false]);">Start</a>
+        <a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'video', 'progress', 'vid_1', 2, false]);">Start</a>
+        <a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'video', 'progress', 'vid_1', 3, false]);">Start</a>
+        <a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'video', 'ended', 'vid_1', , false]);">Start</a>
+        <br />
+        <a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'video', 'started', 'vid_2', , false]);">Start</a>
+        <a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'video', 'progress', 'vid_2', 1, false]);">Start</a>
+        <a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'video', 'progress', 'vid_2', 2, false]);">Start</a>
+        <a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'video', 'progress', 'vid_2', 3, false]);">Start</a>
+        <a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'video', 'ended', 'vid_2', , false]);">Start</a>
     </div>
 </div>
 <div id="footer">
