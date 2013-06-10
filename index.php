@@ -80,17 +80,23 @@
     </div>
     <div id="content">
     	<?php echo 'Welcome ' . $_REQUEST ["username"]; ?>!<br />
-        <a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'video', 'started', 'vid_1', , false]);">Start</a>
-        <a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'video', 'progress', 'vid_1', 1, false]);">Start</a>
-        <a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'video', 'progress', 'vid_1', 2, false]);">Start</a>
-        <a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'video', 'progress', 'vid_1', 3, false]);">Start</a>
-        <a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'video', 'ended', 'vid_1', , false]);">Start</a>
+        vid_1<a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'video', 'started', 'vid_1', , false]);">started</a>
+        <a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'video', 'progress', 'vid_1', 1, false]);">progress 1</a>
+        <a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'video', 'progress', 'vid_1', 2, false]);">progress 2</a>
+        <a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'video', 'progress', 'vid_1', 3, false]);">progress 3</a>
+        <a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'video', 'ended', 'vid_1', , false]);">ended</a>
         <br />
-        <a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'video', 'started', 'vid_2', , false]);">Start</a>
-        <a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'video', 'progress', 'vid_2', 1, false]);">Start</a>
-        <a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'video', 'progress', 'vid_2', 2, false]);">Start</a>
-        <a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'video', 'progress', 'vid_2', 3, false]);">Start</a>
-        <a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'video', 'ended', 'vid_2', , false]);">Start</a>
+        vid_2<a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'video', 'started', 'vid_2', , false]);">started</a>
+        <a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'video', 'progress', 'vid_2', 1, false]);">progress 1</a>
+        <a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'video', 'progress', 'vid_2', 2, false]);">progress 2</a>
+        <a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'video', 'progress', 'vid_2', 3, false]);">progress 3</a>
+        <a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'video', 'ended', 'vid_2', , false]);">ended</a>
+        <br />
+        vid_3<a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'video', 'started', 'vid_3', , false]);">started</a>
+        <a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'video', 'progress', 'vid_3', 1, false]);">progress 1</a>
+        <a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'video', 'progress', 'vid_3', 2, false]);">progress 2</a>
+        <a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'video', 'progress', 'vid_3', 3, false]);">progress 3</a>
+        <a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'video', 'ended', 'vid_3', , false]);">ended</a>
     </div>
 </div>
 <div id="footer">
