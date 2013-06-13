@@ -69,9 +69,6 @@
             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
-        
-        push();
-
     </script>
 </head>
 
@@ -85,23 +82,23 @@
 
     <div id="content">
     	<?php echo 'Welcome ' . $_REQUEST ["username"]; ?>!<br />
-        vid_1<a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'video', 'started', 'vid_1', , false]);">started</a>
-        <a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'video', 'progress', 'vid_1', 1, false]);">progress 1</a>
-        <a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'video', 'progress', 'vid_1', 2, false]);">progress 2</a>
-        <a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'video', 'progress', 'vid_1', 3, false]);">progress 3</a>
-        <a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'video', 'ended', 'vid_1', , false]);">ended</a>
+        vid_1<a href="javascript:void(0)" onClick="push('<?php echo $_REQUEST ["partnerCode"]; ?>', '<?php echo $_REQUEST ["username"]; ?>', ' _trackEvent', 'video', 'started', 'vid_1', null);">started</a>
+        <a href="javascript:void(0)" onClick="push('<?php echo $_REQUEST ["partnerCode"]; ?>', '<?php echo $_REQUEST ["username"]; ?>', ' _trackEvent', 'video', 'progress', 'vid_1', 1);">progress 1</a>
+        <a href="javascript:void(0)" onClick="push('<?php echo $_REQUEST ["partnerCode"]; ?>', '<?php echo $_REQUEST ["username"]; ?>', ' _trackEvent', 'video', 'progress', 'vid_1', 2);">progress 2</a>
+        <a href="javascript:void(0)" onClick="push('<?php echo $_REQUEST ["partnerCode"]; ?>', '<?php echo $_REQUEST ["username"]; ?>', ' _trackEvent', 'video', 'progress', 'vid_1', 3);">progress 3</a>
+        <a href="javascript:void(0)" onClick="push('<?php echo $_REQUEST ["partnerCode"]; ?>', '<?php echo $_REQUEST ["username"]; ?>', ' _trackEvent', 'video', 'ended', 'vid_1', null);">ended</a>
         <br />
-        vid_2<a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'video', 'started', 'vid_2', , false]);">started</a>
-        <a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'video', 'progress', 'vid_2', 1, false]);">progress 1</a>
-        <a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'video', 'progress', 'vid_2', 2, false]);">progress 2</a>
-        <a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'video', 'progress', 'vid_2', 3, false]);">progress 3</a>
-        <a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'video', 'ended', 'vid_2', , false]);">ended</a>
+        vid_2<a href="javascript:void(0)" onClick="push('<?php echo $_REQUEST ["partnerCode"]; ?>', '<?php echo $_REQUEST ["username"]; ?>', ' _trackEvent', 'video', 'started', 'vid_2', null);">started</a>
+        <a href="javascript:void(0)" onClick="push('<?php echo $_REQUEST ["partnerCode"]; ?>', '<?php echo $_REQUEST ["username"]; ?>', ' _trackEvent', 'video', 'progress', 'vid_2', 1);">progress 1</a>
+        <a href="javascript:void(0)" onClick="push('<?php echo $_REQUEST ["partnerCode"]; ?>', '<?php echo $_REQUEST ["username"]; ?>', ' _trackEvent', 'video', 'progress', 'vid_2', 2);">progress 2</a>
+        <a href="javascript:void(0)" onClick="push('<?php echo $_REQUEST ["partnerCode"]; ?>', '<?php echo $_REQUEST ["username"]; ?>', ' _trackEvent', 'video', 'progress', 'vid_2', 3);">progress 3</a>
+        <a href="javascript:void(0)" onClick="push('<?php echo $_REQUEST ["partnerCode"]; ?>', '<?php echo $_REQUEST ["username"]; ?>', ' _trackEvent', 'video', 'ended', 'vid_2', null);">ended</a>
         <br />
-        vid_3<a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'video', 'started', 'vid_3', , false]);">started</a>
-        <a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'video', 'progress', 'vid_3', 1, false]);">progress 1</a>
-        <a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'video', 'progress', 'vid_3', 2, false]);">progress 2</a>
-        <a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'video', 'progress', 'vid_3', 3, false]);">progress 3</a>
-        <a href="javascript:void(0)" onClick="_gaq.push(['_trackEvent', 'video', 'ended', 'vid_3', , false]);">ended</a>
+        vid_3<a href="javascript:void(0)" onClick="push('<?php echo $_REQUEST ["partnerCode"]; ?>', '<?php echo $_REQUEST ["username"]; ?>', ' _trackEvent', 'video', 'started', 'vid_3', null);">started</a>
+        <a href="javascript:void(0)" onClick="push('<?php echo $_REQUEST ["partnerCode"]; ?>', '<?php echo $_REQUEST ["username"]; ?>', ' _trackEvent', 'video', 'progress', 'vid_3', 1);">progress 1</a>
+        <a href="javascript:void(0)" onClick="push('<?php echo $_REQUEST ["partnerCode"]; ?>', '<?php echo $_REQUEST ["username"]; ?>', ' _trackEvent', 'video', 'progress', 'vid_3', 2);">progress 2</a>
+        <a href="javascript:void(0)" onClick="push('<?php echo $_REQUEST ["partnerCode"]; ?>', '<?php echo $_REQUEST ["username"]; ?>', ' _trackEvent', 'video', 'progress', 'vid_3', 3);">progress 3</a>
+        <a href="javascript:void(0)" onClick="push('<?php echo $_REQUEST ["partnerCode"]; ?>', '<?php echo $_REQUEST ["username"]; ?>', ' _trackEvent', 'video', 'ended', 'vid_3', null);">ended</a>
     </div>
 </div>
 <div id="footer">

@@ -1,8 +1,8 @@
 
 
-function push() {
+function push(partnerCode, username, name, category, action, label, value) {
     var imageObj = new Image();
-    imageObj.src = "http://localhost:56832/analytics/a.gif?p=ggh&u=TestUser&n=_trackEvent&c=video&a=started&l=vid_5&v=1"
+    imageObj.src = "http://breuss.azurewebsites.net/analytics/a.gif?p=" + partnerCode + "&u=" + username + "&n=" + name + "&c=" + category + "&a=" + action + "&l=" + label + "&v=" + value;
 }
 
 
